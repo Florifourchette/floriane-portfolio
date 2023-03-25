@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-gh-pages/static/css/main.2ea0d940.css",
-    "main.js": "/react-gh-pages/static/js/main.f96e5d4c.js",
+    "main.js": "/react-gh-pages/static/js/main.6ce01ef3.js",
     "static/media/roboto-all-500-normal.woff": "/react-gh-pages/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "/react-gh-pages/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
     "static/media/roboto-all-400-normal.woff": "/react-gh-pages/static/media/roboto-all-400-normal.c5d001fa922fa66a147f.woff",
@@ -36,10 +36,10 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/react-gh-pages/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/react-gh-pages/index.html",
     "main.2ea0d940.css.map": "/react-gh-pages/static/css/main.2ea0d940.css.map",
-    "main.f96e5d4c.js.map": "/react-gh-pages/static/js/main.f96e5d4c.js.map"
+    "main.6ce01ef3.js.map": "/react-gh-pages/static/js/main.6ce01ef3.js.map"
   },
   "entrypoints": [
     "static/css/main.2ea0d940.css",
-    "static/js/main.f96e5d4c.js"
+    "static/js/main.6ce01ef3.js"
   ]
 }
