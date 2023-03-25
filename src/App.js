@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import RepoCards from "./RepoCards";
 import "./style.css";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
+import About_me from "./About_me";
+import NavBar from "./NavBar";
+import { Routes, Route } from "react-router-dom";
+import Certifications from "./Certifications";
 
 const App = () => {
   const [items, setItems] = useState([]);
@@ -23,25 +26,12 @@ const App = () => {
   console.log(items);
   return (
     <>
-      <Tabs>
-        <TabList>
-          <Tab>About me</Tab>
-          <Tab>Projects</Tab>
-          <Tab>Certifications</Tab>
-        </TabList>
-        <TabPanel>
-          <h2>Any content 1</h2>
-        </TabPanel>
-        <TabPanel>
-          <h2>
-            {" "}
-            <div className="repoCardsContainer">
-              <RepoCards items={items} />
-            </div>
-          </h2>
-        </TabPanel>
-        <TabPanel>Any content Certification</TabPanel>
-      </Tabs>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<About_me />}></Route>
+        <Route path="/projects" element={<RepoCards items={items} />}></Route>
+        <Route path="/certifications" element={<Certifications />}></Route>
+      </Routes>
     </>
   );
 };

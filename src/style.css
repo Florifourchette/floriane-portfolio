@@ -2,10 +2,6 @@ ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 .repoCardsContainer {
   width: 100%;
   display: flex;
@@ -16,4 +12,46 @@ a {
 
 .repoCard {
   margin-top: 3em;
+}
+
+#photoCV {
+  width: 100%;
+}
+
+.contactLogo {
+  width: 15%;
+  margin-right: 5%;
+  padding: 0;
+}
+
+.contactContainer {
+  display: inline-flex;
+  align-items: center;
+  width: 120%;
+}
+
+.contactParagraph {
+  margin-top: 7%;
+  font-size: 1em;
+  width: 100%;
+}
+
+.presentationAboutMe {
+  font-size: 1em;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.logo-container {
+  margin-top: 5%;
+}
+
+.ITlanguageLogo {
+  margin-top: 3%;
+  margin-right: 3%;
+  width: 30%;
+}
+
+.languageLogo {
+  width: 10%;
 }
