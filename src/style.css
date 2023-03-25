@@ -1,0 +1,20 @@
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .repoCardsContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  border: solid red 10px;
+}
+
+.repoCard {
+  border: solid green 10px;
+} */
