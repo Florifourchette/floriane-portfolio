@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import RepoCards from "./RepoCards";
-import PropTypes from "prop-types";
-import Box from "@mui/material/Box";
 import "./style.css";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
 
 const App = () => {
   const [items, setItems] = useState([]);
@@ -22,9 +22,27 @@ const App = () => {
   }, []);
   console.log(items);
   return (
-    <div className="repoCardsContainer">
-      <RepoCards items={items} />
-    </div>
+    <>
+      <Tabs>
+        <TabList>
+          <Tab>About me</Tab>
+          <Tab>Projects</Tab>
+          <Tab>Certifications</Tab>
+        </TabList>
+        <TabPanel>
+          <h2>Any content 1</h2>
+        </TabPanel>
+        <TabPanel>
+          <h2>
+            {" "}
+            <div className="repoCardsContainer">
+              <RepoCards items={items} />
+            </div>
+          </h2>
+        </TabPanel>
+        <TabPanel>Any content Certification</TabPanel>
+      </Tabs>
+    </>
   );
 };
 
