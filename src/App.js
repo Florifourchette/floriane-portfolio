@@ -11,17 +11,16 @@ const App = () => {
     fetch("https://api.github.com/users/Florifourchette/repos").then(
       (response) => {
         response.json().then((data) => {
-          // const newData = data.map((item) => {
-          //   item.created_at = new Date(item.created_at.slice(0, 10));
-          //   return item;
-          // });
-          // setItems(newData.sort((a, b) => b.created_at - a.created_at));
-          console.log(data[3]);
+          const newData = data.map((item) => {
+            item.created_at = new Date(item.created_at.slice(0, 10));
+            return item;
+          });
+          setItems(newData.sort((a, b) => b.created_at - a.created_at));
         });
       }
     );
   }, []);
-
+  console.log(items);
   return (
     <div className="repoCardsContainer">
       <RepoCards items={items} />

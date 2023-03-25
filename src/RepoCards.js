@@ -17,8 +17,7 @@ const RepoCards = ({ items }) => {
   const handleClick = () => {};
   return (
     <>
-      {items[4].name}
-      {items.map((item) => {
+      {items?.map((item) => {
         const index = items.indexOf(item);
         let description = "";
         const language =
@@ -29,7 +28,7 @@ const RepoCards = ({ items }) => {
         if (item.description === null) {
           description = `find more info about my project on my GitHub account`;
         } else {
-          return (description = item.description);
+          description = item.description;
         }
         return (
           <a href={item.html_url} key={index}>
