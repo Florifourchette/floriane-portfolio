@@ -12,6 +12,7 @@ import Experiences from "./Experiences";
 import Skills from "./Skills";
 import Languages from "./Languages";
 import Hobbies from "./Hobbies";
+import "./images/small_logo/email.png";
 
 const About_me = () => {
   return (
@@ -24,7 +25,8 @@ const About_me = () => {
               <div className="contactContainer">
                 <img
                   className="contactLogo"
-                  src="./images/small_logo/email.png"
+                  src={require("./images/small_logo/email.png")}
+                  alt="email logo"
                 />
                 <p className="contactParagraph">
                   floriane.michelat@outlook.com
@@ -33,28 +35,32 @@ const About_me = () => {
               <div className="contactContainer">
                 <img
                   className="contactLogo"
-                  src="./images/small_logo/github.png"
+                  src={require("./images/small_logo/github.png")}
+                  alt="Contact logo"
                 />
                 <p className="contactParagraph">Florifourchette</p>
               </div>
               <div className="contactContainer">
                 <img
                   className="contactLogo"
-                  src="./images/small_logo/linkedin.png"
+                  src={require("./images/small_logo/linkedin.png")}
+                  alt="Linkedin logo"
                 />
                 <p className="contactParagraph">Floriane Michelat</p>
               </div>
               <div className="contactContainer">
                 <img
                   className="contactLogo"
-                  src="./images/small_logo/phone.png"
+                  src={require("./images/small_logo/phone.png")}
+                  alt="Phone logo"
                 />
                 <p className="contactParagraph">+49 162 74 89 056</p>
               </div>
               <div className="contactContainer">
                 <img
                   className="contactLogo"
-                  src="./images/small_logo/home.png"
+                  src={require("./images/small_logo/home.png")}
+                  alt="Home logo"
                 />
                 <p className="contactParagraph">
                   Hainer Weg 4<br />
@@ -65,31 +71,41 @@ const About_me = () => {
           </Grid>
         </Grid>
         <Grid item xs={2}>
-          <img id="photoCV" src="./images/photoCV.jpg" />
+          <img
+            id="photoCV"
+            src={require("./images/photoCV.jpg")}
+            alt="photo CV"
+          />
           <div className="logo-container">
             <img
               className="ITlanguageLogo"
-              src="./images/language_logo/JavaScript-logo.png"
+              src={require("./images/language_logo/JavaScript-logo.png")}
+              alt="Javascript logo"
             />
             <img
               className="ITlanguageLogo"
-              src="./images/language_logo/react-logo.png"
+              src={require("./images/language_logo/react-logo.png")}
+              alt="react logo"
             />
             <img
               className="ITlanguageLogo"
-              src="./images/language_logo/css-logo.png"
+              src={require("./images/language_logo/css-logo.png")}
+              alt="css logo"
             />
             <img
               className="ITlanguageLogo"
-              src="./images/language_logo/html-logo.png"
+              src={require("./images/language_logo/html-logo.png")}
+              alt="html logo"
             />
             <img
               className="ITlanguageLogo"
-              src="./images/language_logo/sql-logo.png"
+              src={require("./images/language_logo/sql-logo.png")}
+              alt="SQL logo"
             />
             <img
               className="ITlanguageLogo"
-              src="./images/language_logo/nodejs-logo.png"
+              src={require("./images/language_logo/nodejs-logo.png")}
+              alt="Node logo"
             />
           </div>
         </Grid>

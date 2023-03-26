@@ -40,7 +40,7 @@ const RepoCards = ({ items }) => {
               <CardMedia
                 component="img"
                 height="400"
-                image={`./images/logo-${language}.svg`}
+                image={require(`./images/logo-${language}.svg`)}
                 alt={`${item.language}-logo`}
               />
               <CardContent>

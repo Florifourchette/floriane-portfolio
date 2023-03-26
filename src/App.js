@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import RepoCards from "./RepoCards";
 import "./style.css";
 import "react-tabs/style/react-tabs.css";
-import About_me from "./About_me";
+import AboutMe from "./AboutMe";
 import NavBar from "./NavBar";
 import { Routes, Route } from "react-router-dom";
 import Certifications from "./Certifications";
@@ -28,7 +28,7 @@ const App = () => {
     <>
       <NavBar />
       <Routes>
-        <Route path="/" element={<About_me />}></Route>
+        <Route path="/" element={<AboutMe />}></Route>
         <Route path="/projects" element={<RepoCards items={items} />}></Route>
         <Route path="/certifications" element={<Certifications />}></Route>
       </Routes>

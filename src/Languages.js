@@ -9,7 +9,8 @@ const Languages = () => {
           <td>
             <img
               className="languageLogo"
-              src="./images/language_logo/French.png"
+              src={require("./images/language_logo/French.png")}
+              alt="French logo"
             />
           </td>
           <td>Native speaker</td>
@@ -18,7 +19,8 @@ const Languages = () => {
           <td>
             <img
               className="languageLogo"
-              src="./images/language_logo/English.png"
+              src={require("./images/language_logo/English.png")}
+              alt="English logo"
             />
           </td>
           <td>Highly proficient - C1</td>
@@ -27,7 +29,8 @@ const Languages = () => {
           <td>
             <img
               className="languageLogo"
-              src="./images/language_logo/german.png"
+              src={require("./images/language_logo/german.png")}
+              alt="German logo"
             />
           </td>
           <td>Intermediate - B1/B2</td>
@@ -36,7 +39,8 @@ const Languages = () => {
           <td>
             <img
               className="languageLogo"
-              src="./images/language_logo/spanish.png"
+              src={require("./images/language_logo/spanish.png")}
+              alt="Spanish logo"
             />
           </td>
           <td>Intermediate - B2</td>
