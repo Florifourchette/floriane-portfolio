@@ -1,9 +1,17 @@
+#root {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 ul {
   list-style: none;
 }
 
 .repoCardsContainer {
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -12,6 +20,10 @@ ul {
 
 .repoCard {
   margin-top: 3em;
+}
+
+.repoCard:hover {
+  background-color: grey;
 }
 
 #photoCV {
@@ -54,4 +66,36 @@ ul {
 
 .languageLogo {
   width: 10%;
+}
+
+.certificationLink {
+  text-decoration: none;
+}
+
+.certification_name {
+  margin-left: 1%;
+}
+
+.certification_logo {
+  width: 30%;
+}
+
+.certificationsCards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.certification_page_h2 {
+  text-align: center;
+}
+
+.certification_container {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }

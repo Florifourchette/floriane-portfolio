@@ -5,7 +5,7 @@ import "react-tabs/style/react-tabs.css";
 import AboutMe from "./AboutMe";
 import NavBar from "./NavBar";
 import { Routes, Route } from "react-router-dom";
-import Certifications from "./Certifications";
+import CertificationsPage from "./CertificationsPage";
 
 const App = () => {
   const [items, setItems] = useState([]);
@@ -23,14 +23,13 @@ const App = () => {
       }
     );
   }, []);
-  console.log(items);
   return (
     <>
       <NavBar />
       <Routes>
         <Route path="/" element={<AboutMe />}></Route>
         <Route path="/projects" element={<RepoCards items={items} />}></Route>
-        <Route path="/certifications" element={<Certifications />}></Route>
+        <Route path="/certifications" element={<CertificationsPage />}></Route>
       </Routes>
     </>
   );

@@ -8,7 +8,7 @@ import Popover from "@mui/material/Popover";
 
 const Certifications = () => {
   const certification = DocumentsList.filter(
-    (item) => item.type === "certification"
+    (item) => item.type !== "certification"
   );
 
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -25,7 +25,7 @@ const Certifications = () => {
 
   return (
     <>
-      <h2 className="certification_page_h2">My certifications</h2>
+      <h2 className="certification_page_h2">My references</h2>
       <div className="certificationsCards">
         {certification.map((item) => {
           const index = certification.indexOf(item);
@@ -35,7 +35,7 @@ const Certifications = () => {
               <Card
                 key={index}
                 className="repoCard"
-                sx={{ maxWidth: 300 }}
+                sx={{ maxWidth: 330 }}
                 aria-owns={open ? "mouse-over-popover" : undefined}
                 aria-haspopup="true"
                 onMouseEnter={handlePopoverOpen}
@@ -43,7 +43,7 @@ const Certifications = () => {
               >
                 <CardMedia
                   component="img"
-                  height="60"
+                  height="150"
                   image={require(`${item.logo}`)}
                   alt={`${item.name} logo`}
                 />
