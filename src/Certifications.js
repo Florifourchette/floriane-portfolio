@@ -1,27 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import DocumentsList from "./DocumentsList";
 import { Card } from "@mui/material";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import Popover from "@mui/material/Popover";
 
 const Certifications = () => {
   const certification = DocumentsList.filter(
     (item) => item.type === "certification"
   );
-
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const handlePopoverOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handlePopoverClose = () => {
-    setAnchorEl(null);
-  };
-
-  const open = Boolean(anchorEl);
 
   return (
     <>
@@ -35,11 +22,13 @@ const Certifications = () => {
               <Card
                 key={index}
                 className="repoCard"
-                sx={{ maxWidth: 300 }}
-                aria-owns={open ? "mouse-over-popover" : undefined}
-                aria-haspopup="true"
-                onMouseEnter={handlePopoverOpen}
-                onMouseLeave={handlePopoverClose}
+                sx={{
+                  maxWidth: 300,
+                  ":hover": {
+                    backgroundColor: "#EBF5FB",
+                    color: "white",
+                  },
+                }}
               >
                 <CardMedia
                   component="img"

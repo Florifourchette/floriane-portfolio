@@ -26,11 +26,13 @@ const Education = () => {
             Preparatory class for the highest ranked French Business School
           </td>
           <td>Carnot High School</td>
+          <td></td>
         </tr>
         <tr>
           <td>2011</td>
           <td>Baccalaureate Scientific Section</td>
           <td>Nodier High School</td>
+          <td></td>
         </tr>
       </tbody>
     </Table>

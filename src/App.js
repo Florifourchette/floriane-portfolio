@@ -25,12 +25,17 @@ const App = () => {
   }, []);
   return (
     <>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<AboutMe />}></Route>
-        <Route path="/projects" element={<RepoCards items={items} />}></Route>
-        <Route path="/certifications" element={<CertificationsPage />}></Route>
-      </Routes>
+      <NavBar className="navbar" />
+      <div className="body">
+        <Routes>
+          <Route path="/" element={<AboutMe />}></Route>
+          <Route path="/projects" element={<RepoCards items={items} />}></Route>
+          <Route
+            path="/certifications"
+            element={<CertificationsPage />}
+          ></Route>
+        </Routes>
+      </div>
     </>
   );
 };

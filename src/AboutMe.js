@@ -17,136 +17,90 @@ import "./images/small_logo/email.png";
 const About_me = () => {
   return (
     <>
-      <Grid container spacing={2}>
-        <Grid item xs={1}></Grid>
-        <Grid item xs={5}>
-          <Grid container spacing={2}>
-            <Grid item xs={5}>
-              <div className="contactContainer">
-                <img
-                  className="contactLogo"
-                  src={require("./images/small_logo/email.png")}
-                  alt="email logo"
-                />
-                <p className="contactParagraph">
-                  floriane.michelat@outlook.com
-                </p>
-              </div>
-              <div className="contactContainer">
-                <img
-                  className="contactLogo"
-                  src={require("./images/small_logo/github.png")}
-                  alt="Contact logo"
-                />
-                <p className="contactParagraph">Florifourchette</p>
-              </div>
-              <div className="contactContainer">
-                <img
-                  className="contactLogo"
-                  src={require("./images/small_logo/linkedin.png")}
-                  alt="Linkedin logo"
-                />
-                <p className="contactParagraph">Floriane Michelat</p>
-              </div>
-              <div className="contactContainer">
-                <img
-                  className="contactLogo"
-                  src={require("./images/small_logo/phone.png")}
-                  alt="Phone logo"
-                />
-                <p className="contactParagraph">+49 162 74 89 056</p>
-              </div>
-              <div className="contactContainer">
-                <img
-                  className="contactLogo"
-                  src={require("./images/small_logo/home.png")}
-                  alt="Home logo"
-                />
-                <p className="contactParagraph">
-                  Hainer Weg 4<br />
-                  60599 Frankfurt am Main
-                </p>
-              </div>
-            </Grid>
-          </Grid>
-        </Grid>
-        <Grid item xs={2}>
-          <img
-            id="photoCV"
-            src={require("./images/photoCV.jpg")}
-            alt="photo CV"
-          />
-          <div className="logo-container">
+      <div className="presentation_paragraph">
+        <p>
+          Learn more me. I have experience in working with the IT department but
+          also in leading projects such as the launch of a new website. For the
+          past few months, I have been training myself in a bootcamp at WBS
+          School in order to gain relevant knowledge in IT. Javascript, React,
+          NodeJS are some skills I've gained but there are also many more so
+          don't hesitate in contacting me if you are curious about them!
+        </p>
+      </div>
+
+      <Grid container spacing={2} sx={{ mt: 3, ml: 10, mr: 5 }}>
+        <Grid item xs={2} sx={{ mt: 6 }}>
+          <div className="contactContainer">
             <img
-              className="ITlanguageLogo"
-              src={require("./images/language_logo/JavaScript-logo.png")}
-              alt="Javascript logo"
+              className="contactLogo"
+              src={require("./images/small_logo/email.png")}
+              alt="email logo"
             />
+            <p className="contactParagraph">floriane.michelat@outlook.com</p>
+          </div>
+          <div className="contactContainer">
             <img
-              className="ITlanguageLogo"
-              src={require("./images/language_logo/react-logo.png")}
-              alt="react logo"
+              className="contactLogo"
+              src={require("./images/small_logo/github.png")}
+              alt="Contact logo"
             />
+            <p className="contactParagraph">Florifourchette</p>
+          </div>
+          <div className="contactContainer">
             <img
-              className="ITlanguageLogo"
-              src={require("./images/language_logo/css-logo.png")}
-              alt="css logo"
+              className="contactLogo"
+              src={require("./images/small_logo/linkedin.png")}
+              alt="Linkedin logo"
             />
+            <p className="contactParagraph">Floriane Michelat</p>
+          </div>
+          <div className="contactContainer">
             <img
-              className="ITlanguageLogo"
-              src={require("./images/language_logo/html-logo.png")}
-              alt="html logo"
+              className="contactLogo"
+              src={require("./images/small_logo/phone.png")}
+              alt="Phone logo"
             />
+            <p className="contactParagraph">+49 162 74 89 056</p>
+          </div>
+          <div className="contactContainer">
             <img
-              className="ITlanguageLogo"
-              src={require("./images/language_logo/sql-logo.png")}
-              alt="SQL logo"
+              className="contactLogo"
+              src={require("./images/small_logo/home.png")}
+              alt="Home logo"
             />
-            <img
-              className="ITlanguageLogo"
-              src={require("./images/language_logo/nodejs-logo.png")}
-              alt="Node logo"
-            />
+            <p className="contactParagraph">
+              Hainer Weg 4<br />
+              60599 Frankfurt am Main
+            </p>
           </div>
         </Grid>
-        <Grid container spacing={2}>
-          <Grid item xs={12}>
-            <p className="presentationAboutMe">
-              Through 5 years of experience in Marketing I have shown relevant
-              skills and curiosity for project management and IT. This is the
-              reason why I recently decided to expand my knowledge and continue
-              my career path in IT. I started to learn Javascript, PHP and
-              Mendix by myself but decided to start a complete coding course
-              since January in order to gain all the relevant skills to become a
-              web developer.
-            </p>
-          </Grid>
+        <Grid xs={9} sx={{ mr: 2, ml: 5 }}>
+          <Tabs>
+            <TabList>
+              <Tab>Education</Tab>
+              <Tab>Experiences</Tab>
+              <Tab>Skills & Tools</Tab>
+              <Tab>Languages</Tab>
+              <Tab>Hobbies</Tab>
+            </TabList>
+            <TabPanel>
+              <Education />
+            </TabPanel>
+            <TabPanel>
+              <Experiences />
+            </TabPanel>
+            <TabPanel>
+              <Skills />
+            </TabPanel>
+            <TabPanel className="languageTab">
+              <Languages />
+            </TabPanel>
+            <TabPanel>
+              <Hobbies />
+            </TabPanel>
+          </Tabs>
         </Grid>
       </Grid>
-      <Tabs>
-        <TabList>
-          <Tab>Education</Tab>
-          <Tab>Experiences</Tab>
-          <Tab>Skills & Tools</Tab>
-          <Tab>Languages</Tab>
-          <Tab>Hobbies</Tab>
-        </TabList>
-        <TabPanel>
-          <Education />
-        </TabPanel>
-        <TabPanel>
-          <Experiences />
-        </TabPanel>
-        <TabPanel>
-          <Skills />
-        </TabPanel>
-        <TabPanel>
-          <Languages />
-        </TabPanel>
-        <TabPanel>
-          <Hobbies />
-        </TabPanel>
-      </Tabs>
     </>
   );
 };

@@ -11,14 +11,17 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import "./style.css";
 
 const RepoCards = ({ items }) => {
-  console.log(items[4]);
+  const projectList = items
+    .filter((project) => {
+      return project.description;
+    })
+    .filter((project) => project.description.includes("Project"));
 
   return (
     <>
       <div className="repoCardsContainer">
-        {items?.map((item) => {
-          const index = items.indexOf(item);
-          let description = "";
+        {projectList?.map((item) => {
+          const index = projectList.indexOf(item);
           const language =
             item.language === null
               ? "github"
@@ -26,16 +29,29 @@ const RepoCards = ({ items }) => {
                   .toLowerCase()
                   .replace(/['"]+/g, "");
 
-          if (item.description === null) {
-            description = `find more info about my project on my GitHub account`;
-          } else {
-            description = item.description;
-          }
           return (
             <Card key={index} className="repoCard" sx={{ maxWidth: 350 }}>
               <CardHeader
-                title={item.name}
-                subheader={item.created_at.toString().slice(0, 15)}
+                title={
+                  <span
+                    style={{
+                      fontSize: 30,
+                      fontFamily: "Arial",
+                    }}
+                  >
+                    {item.name}
+                  </span>
+                }
+                subheader={
+                  <span
+                    style={{
+                      fontSize: 15,
+                      fontFamily: "Arial",
+                    }}
+                  >
+                    {item.created_at.toString().slice(0, 15)}
+                  </span>
+                }
               />
               <CardMedia
                 component="img"
@@ -45,21 +61,49 @@ const RepoCards = ({ items }) => {
               />
               <CardContent>
                 <Typography variant="body2" color="text.primary">
-                  {description}
+                  {item.description}
                 </Typography>
               </CardContent>
               <CardActions disableSpacing>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{ color: "#B9BABA" }}
+                >
                   Discover the GitHub repository or share with your friends
                 </Typography>{" "}
                 <IconButton aria-label="GitHub repository">
-                  <a href={item.html_url}>
+                  <a
+                    style={{
+                      fontSize: 15,
+                      fontFamily: "Arial",
+                    }}
+                    href={item.html_url}
+                  >
                     {" "}
-                    <GitHubIcon />
+                    <GitHubIcon
+                      sx={{
+                        color: "#B9BABA",
+                        ":hover": {
+                          color: "#d6eaf8",
+                          borderRadius: 5,
+                        },
+                      }}
+                    />
                   </a>
                 </IconButton>
                 <IconButton aria-label="share">
-                  <ShareIcon />
+                  <ShareIcon
+                    sx={{
+                      color: "#B9BABA",
+                      mt: 1,
+                      ":hover": {
+                        backgroundColor: "#d6eaf8",
+                        color: "white",
+                        borderRadius: 1,
+                      },
+                    }}
+                  />
                 </IconButton>
               </CardActions>
             </Card>

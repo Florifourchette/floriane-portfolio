@@ -1,6 +1,22 @@
+html {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  color: "#B9BABA";
+}
+
 #root {
   width: 100%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.body {
+  width: 100%;
+  margin-top: 1%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -22,30 +38,26 @@ ul {
   margin-top: 3em;
 }
 
-.repoCard:hover {
-  background-color: grey;
-}
-
 #photoCV {
   width: 100%;
 }
 
 .contactLogo {
-  width: 15%;
-  margin-right: 5%;
-  padding: 0;
+  width: 10%;
+  margin-right: 2%;
 }
 
 .contactContainer {
-  display: inline-flex;
-  align-items: center;
-  width: 120%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
 }
 
 .contactParagraph {
-  margin-top: 7%;
   font-size: 1em;
   width: 100%;
+  text-align: left;
 }
 
 .presentationAboutMe {
@@ -61,11 +73,42 @@ ul {
 .ITlanguageLogo {
   margin-top: 3%;
   margin-right: 3%;
-  width: 30%;
+  width: 5%;
+}
+
+.languageTableContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.languageTable {
+  width: 70%;
+}
+
+.flagColumn {
+  width: 50%;
 }
 
 .languageLogo {
-  width: 10%;
+  width: 20%;
+}
+
+.table-striped > tbody > tr:nth-child(odd) {
+  background-color: #d6eaf8;
+}
+
+.table-striped > tbody > tr:nth-child(even) {
+  background-color: #ebf5fb;
+}
+
+.table-hover > tbody > tr:nth-child(odd):hover {
+  background-color: #ebf5fb;
+}
+
+.table-hover > tbody > tr:nth-child(even):hover {
+  background-color: #d6eaf8;
 }
 
 .certificationLink {
@@ -89,6 +132,7 @@ ul {
 }
 
 .certification_page_h2 {
+  margin-top: 3%;
   text-align: center;
 }
 
@@ -98,4 +142,23 @@ ul {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.navBarContainer {
+  width: 100%;
+  background-color: #d6eaf8;
+  position: relative;
+  font-size: 1.4em;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-brand {
+  font-size: 2em;
+  color: #148ebb;
+}
+
+.presentation_paragraph {
+  width: 70%;
+  margin-top: 3%;
 }

@@ -12,16 +12,21 @@ const Experiences = () => {
           <td>
             <ul>
               <li>
-                <strong>Product owner of the company website:</strong> Updated
-                company websites according to stakeholders’ requirements
-                (created landing pages, implemented SEO best practices)
+                <strong>Product owner of the company website:</strong>{" "}
+                <ul>
+                  <li>
+                    Updated company websites according to stakeholders’
+                    requirements (created landing pages, implemented SEO best
+                    practices)
+                  </li>
+                </ul>
               </li>
               <li>
                 <strong>Project management: </strong>
                 <ul>
                   <li>
                     Launched of a new company website (implemented effective
-                    communication between the teams
+                    communication between the teams)
                   </li>
                   <li>Kept an overview of the project</li>
                   <li>
