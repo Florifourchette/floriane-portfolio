@@ -22,9 +22,11 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="nav">
-              <Nav.Link href="/floriane-portfolio">About me</Nav.Link>
-              <Nav.Link href="/floriane-portfolio">Projects</Nav.Link>
-              <Nav.Link href="/floriane-portfolio">Certifications</Nav.Link>
+              <Nav.Link href="/floriane-portfolio/">About me</Nav.Link>
+              <Nav.Link href="/floriane-portfolio/projects">Projects</Nav.Link>
+              <Nav.Link href="/floriane-portfolio/certifications">
+                Certifications
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
