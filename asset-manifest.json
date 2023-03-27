@@ -1,14 +1,23 @@
 {
   "files": {
-    "main.css": "/floriane-portfolio/static/css/main.c2bd0c97.css",
-    "main.js": "/floriane-portfolio/static/js/main.8f6e575a.js",
+    "main.css": "/floriane-portfolio/static/css/main.418492c5.css",
+    "main.js": "/floriane-portfolio/static/js/main.2db04b6a.js",
     "static/media/photoCV.jpg": "/floriane-portfolio/static/media/photoCV.286668b3897ff1166fe6.jpg",
+    "static/media/Recommendation_letters.pdf": "/floriane-portfolio/static/media/Recommendation_letters.0c579e6ba13cab2ab5d3.pdf",
+    "static/media/iSi_Arbeitzeugnis_DE.pdf": "/floriane-portfolio/static/media/iSi_Arbeitzeugnis_DE.d98f6a1a23bee95f313e.pdf",
+    "static/media/Inyova_Arbeitszeugnis_EN.pdf": "/floriane-portfolio/static/media/Inyova_Arbeitszeugnis_EN.275383816651ed5e776a.pdf",
+    "static/media/Mendix_Rapid_Developper.pdf": "/floriane-portfolio/static/media/Mendix_Rapid_Developper.6261629ce8a399a58d0b.pdf",
+    "static/media/Google_Ads_Search_Certification _ Google.pdf": "/floriane-portfolio/static/media/Google_Ads_Search_Certification _ Google.30c060cdb8043d90d90c.pdf",
+    "static/media/arbeitszeugnis.jpg": "/floriane-portfolio/static/media/arbeitszeugnis.f0816ff4d2c247fa3707.jpg",
     "static/media/roboto-all-500-normal.woff": "/floriane-portfolio/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "/floriane-portfolio/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
     "static/media/roboto-all-400-normal.woff": "/floriane-portfolio/static/media/roboto-all-400-normal.c5d001fa922fa66a147f.woff",
     "static/media/roboto-all-300-normal.woff": "/floriane-portfolio/static/media/roboto-all-300-normal.168d6383e73339293ac3.woff",
     "static/media/github.png": "/floriane-portfolio/static/media/github.caeb9ff86e1c3e87612e.png",
+    "static/media/Codecademy_Learn_JavaScript_course_Certification.pdf": "/floriane-portfolio/static/media/Codecademy_Learn_JavaScript_course_Certification.d5bc305a5c084283b131.pdf",
+    "static/media/Codecademy_Learn_PHP_Course_Certification.pdf": "/floriane-portfolio/static/media/Codecademy_Learn_PHP_Course_Certification.c195d85b93ddda1addc2.pdf",
     "static/media/react-logo.png": "/floriane-portfolio/static/media/react-logo.4127b36258b5e9dc8f88.png",
+    "static/media/recommendation-letter.png": "/floriane-portfolio/static/media/recommendation-letter.421c992ced829b4fa388.png",
     "static/media/home.png": "/floriane-portfolio/static/media/home.223ca6a4c436f57683b9.png",
     "static/media/sql-logo.png": "/floriane-portfolio/static/media/sql-logo.96af83e68e3b32fb2dd7.png",
     "static/media/nodejs-logo.png": "/floriane-portfolio/static/media/nodejs-logo.007e99f68b718e476aba.png",
@@ -39,6 +48,7 @@
     "static/media/roboto-greek-400-normal.woff2": "/floriane-portfolio/static/media/roboto-greek-400-normal.c35e4c3958e209d17b31.woff2",
     "static/media/roboto-greek-500-normal.woff2": "/floriane-portfolio/static/media/roboto-greek-500-normal.9ac81fefbe6c319ea40b.woff2",
     "static/media/roboto-greek-700-normal.woff2": "/floriane-portfolio/static/media/roboto-greek-700-normal.50e795c1345353b0e996.woff2",
+    "static/media/mail.svg": "/floriane-portfolio/static/media/mail.24ece13fcc2aad6a3101.svg",
     "static/media/roboto-vietnamese-500-normal.woff2": "/floriane-portfolio/static/media/roboto-vietnamese-500-normal.d8642a3d1d4ef6179644.woff2",
     "static/media/roboto-vietnamese-400-normal.woff2": "/floriane-portfolio/static/media/roboto-vietnamese-400-normal.3230f9b040f3c630e0c3.woff2",
     "static/media/roboto-vietnamese-700-normal.woff2": "/floriane-portfolio/static/media/roboto-vietnamese-700-normal.3425a701027d0699e369.woff2",
@@ -52,11 +62,12 @@
     "static/media/logo-javascript.svg": "/floriane-portfolio/static/media/logo-javascript.00f3e5cf8bcf4ae623b3.svg",
     "index.html": "/floriane-portfolio/index.html",
     "static/media/logo-github.svg": "/floriane-portfolio/static/media/logo-github.6fa18895f6e6c7772cab.svg",
-    "main.c2bd0c97.css.map": "/floriane-portfolio/static/css/main.c2bd0c97.css.map",
-    "main.8f6e575a.js.map": "/floriane-portfolio/static/js/main.8f6e575a.js.map"
+    "static/media/home.svg": "/floriane-portfolio/static/media/home.b94737149eff4f0523b8.svg",
+    "main.418492c5.css.map": "/floriane-portfolio/static/css/main.418492c5.css.map",
+    "main.2db04b6a.js.map": "/floriane-portfolio/static/js/main.2db04b6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2bd0c97.css",
-    "static/js/main.8f6e575a.js"
+    "static/css/main.418492c5.css",
+    "static/js/main.2db04b6a.js"
   ]
 }
