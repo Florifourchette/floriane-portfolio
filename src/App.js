@@ -28,10 +28,13 @@ const App = () => {
       <NavBar className="navbar" />
       <div className="body">
         <Routes>
-          <Route path="/" element={<AboutMe />}></Route>
-          <Route path="/projects" element={<RepoCards items={items} />}></Route>
+          <Route path="/floriane-portfolio" element={<AboutMe />}></Route>
           <Route
-            path="/certifications"
+            path="floriane-portfolio/projects"
+            element={<RepoCards items={items} />}
+          ></Route>
+          <Route
+            path="floriane-portfolio/certifications"
             element={<CertificationsPage />}
           ></Route>
         </Routes>
