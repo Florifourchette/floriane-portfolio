@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/floriane-portfolio/static/css/main.418492c5.css",
-    "main.js": "/floriane-portfolio/static/js/main.5a90fe33.js",
+    "main.js": "/floriane-portfolio/static/js/main.75cd3509.js",
     "static/media/photoCV.jpg": "/floriane-portfolio/static/media/photoCV.286668b3897ff1166fe6.jpg",
     "static/media/Recommendation_letters.pdf": "/floriane-portfolio/static/media/Recommendation_letters.0c579e6ba13cab2ab5d3.pdf",
     "static/media/iSi_Arbeitzeugnis_DE.pdf": "/floriane-portfolio/static/media/iSi_Arbeitzeugnis_DE.d98f6a1a23bee95f313e.pdf",
@@ -64,10 +64,10 @@
     "static/media/logo-github.svg": "/floriane-portfolio/static/media/logo-github.6fa18895f6e6c7772cab.svg",
     "static/media/home.svg": "/floriane-portfolio/static/media/home.b94737149eff4f0523b8.svg",
     "main.418492c5.css.map": "/floriane-portfolio/static/css/main.418492c5.css.map",
-    "main.5a90fe33.js.map": "/floriane-portfolio/static/js/main.5a90fe33.js.map"
+    "main.75cd3509.js.map": "/floriane-portfolio/static/js/main.75cd3509.js.map"
   },
   "entrypoints": [
     "static/css/main.418492c5.css",
-    "static/js/main.5a90fe33.js"
+    "static/js/main.75cd3509.js"
   ]
 }
